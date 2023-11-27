@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../image/Harshvardhan.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Modal APP</title>
+</head>
+
+<body class="text-white bg-black overflow-x-hidden">
+
+
+    <div class="w-32 h-32 bg-orange-700 absolute rounded-full mx-[400px] my-[110px] z-[-1] circle1"></div>
+    <div class="w-32 h-32 bg-purple-700 absolute rounded-full mx-[810px] my-[530px] z-[-1] circle2"></div>
+
+
+    <div class="w-[100vw] h-[100vh] flex flex-col justify-center items-center">
+
+        <div class="flex flex-col text-center justify-center border border-gray-400 rounded-md pt-12 pb-8 px-8">
+            <div class="mx-[120px]">
+                <img src="../image/Harshvardhan.jpg" alt="" class="w-20 rounded-[10px]">
+            </div>
+            <div class="my-7">
+                <h2 class="text-2xl font-semibold my-3">Harshvardhan</h2>
+                <p>Founder, CodeWithHarsh</p>
+            </div>
+            <div class=" flex gap-3">
+                <button onclick="openModal()"
+                    class="px-3 py-2 border border-gray-100 rounded-md hover:transition-all duration-300 hover:bg-white hover:text-black"><i
+                        class="ri-share-forward-fill pr-2"></i>Share
+                    My Profile</button>
+                <button
+                    class="px-8 py-2 border border-gray-100 rounded-md hover:transition-all duration-300 hover:bg-white hover:text-black">Follow
+                    Me</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-[450px] hidden mx-auto border border-gray-200 rounded-md bg-gray-900 bg-opacity-90 modal">
+
+        <div class="px-4 py-3">
+
+            <div class="mb-2 flex justify-between text-3xl font-semibold">
+                <h1>Share My Profile</h1>
+                <button onclick="closeModal()" id="close"><i class="ri-close-line"></i></button>
+            </div>
+
+            <div class="">
+                <hr>
+            </div>
+
+            <div class="my-4">
+                <p class="font-semibold">Share this via</p>
+            </div>
+
+            <div class="flex justify-between pb-2">
+
+                <div class="">
+                    <button class="text-[#3b5998] border border-[#3b5998] rounded-full p-3" id="facebook">
+                        <i class="ri-facebook-fill text-4xl"></i>
+                    </button>
+                </div>
+
+                <div class="">
+                    <button class="text-[#00ACEE] border border-[#00ACEE] rounded-full p-3" id="twitter">
+                        <i class="ri-twitter-fill text-4xl"></i>
+                    </button>
+                </div>
+
+                <div class="">
+                    <button class="text-red-600 border border-red-600 rounded-full p-3" id="instagram">
+                        <i class="ri-instagram-line text-4xl"></i>
+                    </button>
+                </div>
+
+                <div class="">
+                    <button class="text-[#128C7E] border border-[#128C7E] rounded-full p-3" id="whatsapp">
+                        <i class="ri-whatsapp-line text-4xl"></i>
+                    </button>
+                </div>
+
+                <div class="">
+                    <button class="text-[#0088cc] border border-[#0088cc] rounded-full p-3" id="teligram">
+                        <i class="ri-telegram-fill text-4xl"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="overlay hidden" onclick="closeModal1()"></div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

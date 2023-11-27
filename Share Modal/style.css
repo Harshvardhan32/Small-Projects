@@ -1,0 +1,55 @@
+.circle1{
+    box-shadow: 0px 0px 90px 3px rgb(162, 44, 1);
+    /* translate: 20px 20px 20px 20px; */
+}
+.circle2{
+    box-shadow: 0px 0px 80px 3px rgb(78, 7, 220);
+    /* translate: 20px 20px 20px 20px; */
+}
+
+.modal {
+    position: fixed;
+    top: 38%;
+    left: 33%;
+    scale: 1;
+    backdrop-filter: blur(100px);
+    /* translate: -50%, -50%; */
+    transition: 0.5s ease-in-out;
+}
+
+.overlay{
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(65, 64, 64);
+}
+
+#facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+#twitter:hover {
+    background-color: #00ACEE;
+    color: white;
+}
+
+#instagram:hover {
+    background-color: rgb(233, 4, 4);
+    color: white;
+}
+
+#whatsapp:hover {
+    background-color: #08bc59;
+    color: white;
+}
+
+#teligram:hover {
+    background-color: #0088cc;
+    color: white;
+}
