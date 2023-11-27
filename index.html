@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Unwrap Class Dom</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+    <!-- wrapper-1 -->
+    <div class="flex flex-col justify-center h-[100vh] items-center bg-slate-900">
+        <div class="w-56 text-center">
+
+            <!-- wrapper-2 -->
+            <div class="text-blue-400 text-[19px]">
+                <p>Increment And Decrement</p>
+            </div>
+
+            <div class="bg-white py-2 px-2 justify-evenly flex mt-6 gap-8 text-2xl rounded-sm">
+
+                <!-- negative button -->
+                <button class="border-r-2 border-gray-400 pr-5 dec-btn"> <!-- if we are not using addEventListener then we can use onclick = "Increment()"; -->
+                    <i class="ri-subtract-line"></i>
+                </button>
+
+                <div class="font-semibold border-r-2 border-gray-400 pr-8" id="counter">
+                    <p>0</p>
+                </div>
+
+                <!-- positive button -->
+                <button class="inc-btn"> <!-- if we are not using addEventListener then we can use onclick ="Increment()"; -->
+                    <i class="ri-add-line"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
