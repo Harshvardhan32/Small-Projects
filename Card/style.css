@@ -1,0 +1,55 @@
+.box {
+    margin: 30px;
+    width: 350px;
+    height: auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 1px rgb(144, 144, 144);
+}
+
+.image {
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    border-radius: 8px;
+}
+
+p {
+    margin: 9px 9px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+hr {
+    margin-left: 9px;
+    width: 75%;
+    border: 1px solid rgba(128, 128, 128, 0.27);
+    float: left;
+}
+
+.price {
+    margin-top: -0px;
+}
+
+.off {
+    padding: 5px;
+    font-size: 1rem;
+    color: white;
+    margin-left: 12px;
+    border-radius: 4px;
+    background-color: rgb(16, 235, 136);
+}
+
+.offPrice {
+    color: #0e69f2;
+    font-size: 1.1rem;
+}
+
+.original {
+    color: #737373;
+    font-size: 1.1rem;
+    margin-left: 12px;
+}
