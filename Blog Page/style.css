@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #191627;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    margin: 50px 170px;
+    align-items: center;
+}
+
+nav p {
+    cursor: pointer;
+}
+
+nav a {
+    color: #e6e5e5;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+nav h1 {
+    color: #e6e5e5;
+    font-size: 2.6rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 50px 150px;
+}
+
+.left .box {
+    margin-bottom: 45px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.right .box {
+    margin-bottom: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.box {
+    padding: 20px 30px;
+    border: 2px solid #999;
+    background-color: #2c1c7c;
+}
+
+.box h3 {
+    line-height: 2.0rem;
+    font-size: 1.1rem;
+    color: #ffff00;
+}
+
+.box h2 {
+    line-height: 2.3rem;
+    font-size: 1.6rem;
+    color: #ff9100;
+}
+
+.box .date {
+    line-height: 2.1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f3e093;
+}
+
+.box .desc {
+    line-height: 1.4rem;
+    letter-spacing: .4px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: wheat;
+}
+
+.blog {
+    margin-top: 10px;
+    letter-spacing: .4px;
+}
+
+.blog a {
+    color: #f3e093;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 5px 0px;
+    text-decoration: underline;
+    transition: transform 0.5s ease;
+}
+
+.blog a:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid #ff00dd;
+}
